@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Social media Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <h1 class="header-title">Social Media Dashboard</h1>
+      <h2 class="total-followers">Total Followers: <span id="total-followers">23,004</span></h2>
+    </div>
+    
+    <div class="theme-switcher">
+      <label class="switcher-name" for="theme-switcher">Dark Mode</label>
+      <input type="checkbox" class="switcher" id="theme-switcher">
+    </div>
+
+  </header>
+
+  <div class="main">
+    <!--Cards-->
+    <section class="media-pages">
+      <div class="media fb">
+        <div class="media-header-wrapper">
+          <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+          <h2 class="media-name">@nathanf</h2>
+        </div>
+        <h3 class="followers" id="facebook-followers">1987</h3>
+        <p class="follower-text">Followers</p>
+        <div class="media-footer">
+          <img src="./images/icon-up.svg" alt="Up Icon">
+          <h4 class="media-follower-update" id="facebook-change">12 Today</h4>
+        </div>
+      </div>
+
+      <div class="media twitter">
+        <div class="media-header-wrapper">
+          <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+          <h2 class="media-name">@nathanf</h2>
+        </div>
+        <h3 class="followers" id="twitter-followers">1044</h3>
+        <p class="follower-text">Followers</p>
+        <div class="media-footer">
+          <img src="./images/icon-up.svg" alt="Up Icon">
+          <h4 class="media-follower-update" id="twitter-change">99 Today</h4>
+        </div>
+      </div>
+
+      <div class="media ig">
+        <div class="media-header-wrapper">
+          <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+          <h2 class="media-name">@realnathanf</h2>
+        </div>
+        <h3 class="followers" id="instagram-followers">11k</h3>
+        <p class="follower-text">Followers</p>
+        <div class="media-footer">
+          <img src="./images/icon-up.svg" alt="Up Icon">
+          <h4 class="media-follower-update" id="instagram-change">1099 Today</h4>
+        </div>
+      </div>
+
+      <div class="media yt">
+        <div class="media-header-wrapper">
+          <img src="./images/icon-youtube.svg" alt="YouTube Icon">
+          <h2 class="media-name">@nathanf</h2>
+        </div>
+        <h3 class="followers" id="youtube-followers">8239</h3>
+        <p class="follower-text">SUBSCRIBERS</p>
+        <div class="media-footer">
+          <img src="./images/icon-down.svg" alt="Down Icon">
+          <h4 class="media-follower-update" id="youtube-change">-144 Today</h4>
+        </div>
+      </div>
+    </section>
+
+    <!--Overview-->
+    <h2 class="overview-head">Overview - Today</h2>
+    <div class="mini-media-wrapper">
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Page Views</h3>
+          <div class="box" style="border-color: hsl(0, 92%, 53%)"></div>
+          <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="facebook-views">87</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-up.svg" alt="Up Icon">
+            <h4 class="percentage-update" id="facebook-views-change">3%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Likes</h3>
+          <img src="./images/icon-facebook.svg" alt="Facebook Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="facebook-likes">52</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-down.svg" alt="Down Icon">
+            <h4 class="percentage-update" id="facebook-likes-change">-2%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Likes</h3>
+          <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="instagram-likes">5462</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-up.svg" alt="Up Icon">
+            <h4 class="percentage-update" id="instagram-likes-change">2257%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Profile Views</h3>
+          <img src="./images/icon-instagram.svg" alt="Instagram Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="instagram-views">52k</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-up.svg" alt="Up Icon">
+            <h4 class="percentage-update" id="instagram-views-change">1375%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Retweets</h3>
+          <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="twitter-retweets">117</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-up.svg" alt="Up Icon">
+            <h4 class="percentage-update" id="twitter-retweets-change">303%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Likes</h3>
+          <img src="./images/icon-twitter.svg" alt="Twitter Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="twitter-likes">507</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-up.svg" alt="Up Icon">
+            <h4 class="percentage-update" id="twitter-likes-change">553%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Likes</h3>
+          <img src="./images/icon-youtube.svg" alt="YouTube Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="youtube-likes">107</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-down.svg" alt="Down Icon">
+            <h4 class="percentage-update" id="youtube-likes-change">-19%</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="mini-media">
+        <div class="views-wrapper">
+          <h3 class="mini-media-head">Total Views</h3>
+          <img src="./images/icon-youtube.svg" alt="YouTube Icon">
+        </div>
+        <div class="update-wrapper">
+          <h3 class="mini-media-follower" id="youtube-views">1407</h3>
+          <div class="mini-footer-wrapper">
+            <img src="./images/icon-down.svg" alt="Down Icon">
+            <h4 class="percentage-update" id="youtube-views-change">-12%</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Salim Omoro </a>.
+    </div>
+
+</body>
+</html>
